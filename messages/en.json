@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "story": "Our Story",
+    "collections": "Collections",
+    "gallery": "Gallery",
+    "brides": "Brides",
+    "appointments": "Appointments",
+    "bookCta": "Book Appointment"
+  },
+  "hero": {
+    "pre": "Est. 2025 — South Sudan's Finest Bridal Atelier",
+    "titleLine1": "Bridal",
+    "titleLine2": "Dreams",
+    "titleItalic": "Where every gown tells the story of a love that lasts forever.",
+    "exploreBtn": "Explore Collections",
+    "bookBtn": "Book Appointment",
+    "directionsBtn": "Get Directions"
+  },
+  "marquee": {
+    "text": "Bridal Dreams ✦ Luxury Wedding Gowns ✦ Handcrafted with Love ✦ South Sudan ✦ Your Dream Dress Awaits ✦ Bridal Dreams ✦ Luxury Wedding Gowns ✦ Handcrafted with Love ✦ South Sudan ✦ Your Dream Dress Awaits "
+  },
+  "about": {
+    "label": "Our Story",
+    "titleLine1": "Crafted for your",
+    "titleItalic": "most beautiful day",
+    "titleLine2": "Designs that take your breath away",
+    "body1": "Bridal Dreams was born from a singular passion — to make every bride feel like a work of art. From the first consultation to the final fitting, we are devoted to one vision: yours.",
+    "body2": "Each gown in our collection is sourced and curated with an obsessive attention to fabric, silhouette, and detail. We carry designs that range from timeless ivory classics to contemporary couture.",
+    "body3": "We don't just sell dresses. We create moments that last a lifetime — from your very first appointment to the day you walk down the aisle.",
+    "readStoryBtn": "Read Our Story",
+    "stats": {
+      "brides": "Happy Brides",
+      "gowns": "Gown Styles",
+      "love": "Love Guaranteed"
+    }
+  },
+  "collections": {
+    "label": "The Collection",
+    "titleLine1": "Find your",
+    "titleItalic": "perfect silhouette",
+    "ballGown": "Ball Gown",
+    "ballGownSub": "Timeless volume and grandeur",
+    "sheath": "Sheath",
+    "sheathSub": "Sleek, modern, effortless",
+    "aLine": "A-Line",
+    "aLineSub": "Classic and universally flattering",
+    "lace": "Lace & Embroidery",
+    "laceSub": "Delicate artisan craftsmanship",
+    "mermaid": "Mermaid",
+    "mermaidSub": "Sculpted beauty from bodice to train",
+    "viewCollection": "View Collection →",
+    "view": "View →"
+  },
+  "experience": {
+    "label": "The Bridal Dreams Experience",
+    "titleLine1": "Every Bride",
+    "titleItalic": "Deserves the Best",
+    "privateTitle": "Private Consultations",
+    "privateDesc": "One-on-one appointments in our intimate boutique, guided by our experienced bridal stylists.",
+    "alterationsTitle": "Expert Alterations",
+    "alterationsDesc": "Our in-house seamstresses ensure every gown fits you perfectly, down to the last stitch.",
+    "curationTitle": "Curated Selection",
+    "curationDesc": "Handpicked gowns from the world's finest designers, available exclusively at Bridal Dreams.",
+    "luxuryTitle": "Luxury Experience",
+    "luxuryDesc": "From freshments on arrival to personalised styling advice, every visit is an unforgettable experience."
+  },
+  "gallery": {
+    "label": "The Gallery of Dreams",
+    "titleLine1": "Beauty",
+    "titleItalic": "in every detail"
+  },
+  "testimonials": {
+    "label": "Happy Brides",
+    "titleLine1": "Love stories",
+    "titleItalic": "they shared",
+    "t1": "I walked into Bridal Dreams with no idea what I wanted and walked out with the gown of my dreams. The team made me feel so special — they truly listened to everything I said and found me the most perfect dress.",
+    "t1name": "Hannah B.",
+    "t1date": "Married May 2025",
+    "t2": "Absolutely phenomenal experience from start to finish. The alterations were perfection — it fit like the dress was made just for me. I got so many compliments on my wedding day. Bridal Dreams is truly the best.",
+    "t2name": "Layla M.",
+    "t2date": "Married January 2025",
+    "t3": "I was nervous about finding the right dress on a budget, but the team at Bridal Dreams made sure I never felt pressured. They found me something breathtaking. Truly a magical experience!",
+    "t3name": "Beyang J.",
+    "t3date": "Married April 2026",
+    "t4": "Professional service, beautiful gowns, and a wonderful atmosphere. I highly recommend this boutique to any bride looking for her dream dress.Thank you so much, Bridal Dreams!",
+    "t4name": "Samah A.",
+    "t4date": "Married February 2026"
+  },
+  "booking": {
+    "label": "Appointments",
+    "titleLine1": "Book Your",
+    "titleItalic": "Private Fitting",
+    "infoBody": "Your bridal journey begins with a personal, unhurried appointment in our boutique. We dedicate 90 minutes exclusively to you — no crowds, no pressure, just pure bridal magic.",
+    "feature1": "Complimentary champagne and refreshments",
+    "feature2": "Personal stylist dedicated to you",
+    "feature3": "Full access to our complete collection",
+    "feature4": "Expert alteration consultations",
+    "formTitle": "Request Your Appointment",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "date": "Preferred Date",
+    "time": "Preferred Time",
+    "selectTime": "Select time",
+    "style": "Style Preference",
+    "styleDefault": "What style are you dreaming of?",
+    "styleOptions": {
+      "ballGown": "Ball Gown — Volume & Drama",
+      "mermaid": "Mermaid — Sculpted & Sensual",
+      "aLine": "A-Line — Classic & Timeless",
+      "sheath": "Sheath — Sleek & Modern",
+      "lace": "Lace & Embroidery — Romantic",
+      "notSure": "Not Sure Yet — Surprise Me!"
+    },
+    "message": "Tell Us More",
+    "submitBtn": "Request Appointment",
+    "submitting": "Sending...",
+    "successTitle": "Appointment Requested!",
+    "successMsg": "Thank you! We'll be in touch within 24 hours to confirm your fitting."
+  },
+  "footer": {
+    "tagline": "Luxury Wedding Atelier",
+    "desc": "South Sudan's premier destination for luxury wedding gowns. Every bride deserves to feel extraordinary on her most special day.",
+    "navigate": "Navigate",
+    "collectionsTitle": "Collections",
+    "contact": "Contact",
+    "phone": "+211911130491",
+    "email": "bridalbdreams@gmail.com",
+    "location": "Bridal Dreams, opp Albino Bridge Rd, JUba South Sudan",
+    "getDirections": "Get Directions",
+    "copyright": "© 2025 Bridal Dreams. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "langSwitch": {
+    "en": "English",
+    "ar": "عربي"
+  }
+}
