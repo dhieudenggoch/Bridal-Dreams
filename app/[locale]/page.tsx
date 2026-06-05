@@ -8,13 +8,11 @@ import GallerySection from '@/components/GallerySection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import BookingSection from '@/components/BookingSection';
 import Footer from '@/components/Footer';
-import CustomCursor from '@/components/CustomCursor';
 import RevealObserver from '@/components/RevealObserver';
 
 export default function HomePage() {
   return (
     <>
-      <CustomCursor />
       <RevealObserver />
       <Navbar />
       <main>
