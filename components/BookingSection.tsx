@@ -3,18 +3,54 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
+// ── Replace with the business WhatsApp number (international format, no + or spaces) ──
+const WHATSAPP_NUMBER = '211911130491';
+
 export default function BookingSection() {
   const t = useTranslations('booking');
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  const [form, setForm] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    date: '',
+    time: '',
+    style: '',
+    message: '',
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    setForm((prev) => ({ ...prev, [e.target.id]: e.target.value }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+
+    const styleLabel = styleOptions.find((o) => o.value === form.style)?.label || form.style || 'Not specified';
+
+    const text = [
+      `🌸 *New Appointment Request — Bridal Dreams*`,
+      ``,
+      `👰 *Name:* ${form.firstName} ${form.lastName}`,
+      `📧 *Email:* ${form.email || 'Not provided'}`,
+      `📞 *Phone:* ${form.phone || 'Not provided'}`,
+      `📅 *Date:* ${form.date || 'Not specified'}`,
+      `🕐 *Time:* ${form.time || 'Not specified'}`,
+      `👗 *Style:* ${styleLabel}`,
+      `💬 *Notes:* ${form.message || 'None'}`,
+    ].join('\n');
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
-    }, 1200);
+      window.open(url, '_blank');
+    }, 800);
   };
 
   const features = [
@@ -59,6 +95,9 @@ export default function BookingSection() {
               <div style={{ fontSize: 40, marginBottom: 20 }}>✦</div>
               <h3>{t('successTitle')}</h3>
               <p>{t('successMsg')}</p>
+              <p style={{ marginTop: 12, opacity: 0.6, fontSize: 14 }}>
+                A WhatsApp message has been opened with your booking details.
+              </p>
             </div>
           ) : (
             <>
@@ -67,31 +106,31 @@ export default function BookingSection() {
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="firstName">{t('firstName')}</label>
-                    <input id="firstName" type="text" required />
+                    <input id="firstName" type="text" required value={form.firstName} onChange={handleChange} />
                   </div>
                   <div className="form-group">
                     <label htmlFor="lastName">{t('lastName')}</label>
-                    <input id="lastName" type="text" required />
+                    <input id="lastName" type="text" required value={form.lastName} onChange={handleChange} />
                   </div>
                 </div>
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="email">{t('email')}</label>
-                    <input id="email" type="email" required />
+                    <input id="email" type="email" required value={form.email} onChange={handleChange} />
                   </div>
                   <div className="form-group">
                     <label htmlFor="phone">{t('phone')}</label>
-                    <input id="phone" type="tel" />
+                    <input id="phone" type="tel" value={form.phone} onChange={handleChange} />
                   </div>
                 </div>
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="date">{t('date')}</label>
-                    <input id="date" type="date" />
+                    <input id="date" type="date" value={form.date} onChange={handleChange} />
                   </div>
                   <div className="form-group">
                     <label htmlFor="time">{t('time')}</label>
-                    <select id="time">
+                    <select id="time" value={form.time} onChange={handleChange}>
                       <option value="">{t('selectTime')}</option>
                       {timeSlots.map((slot) => (
                         <option key={slot} value={slot}>{slot}</option>
@@ -101,7 +140,7 @@ export default function BookingSection() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="style">{t('style')}</label>
-                  <select id="style">
+                  <select id="style" value={form.style} onChange={handleChange}>
                     <option value="">{t('styleDefault')}</option>
                     {styleOptions.map((opt) => (
                       <option key={opt.value} value={opt.value}>{opt.label}</option>
@@ -110,7 +149,7 @@ export default function BookingSection() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="message">{t('message')}</label>
-                  <textarea id="message" rows={4} />
+                  <textarea id="message" rows={4} value={form.message} onChange={handleChange} />
                 </div>
                 <button type="submit" className="form-submit" disabled={loading}>
                   {loading ? t('submitting') : t('submitBtn')}
